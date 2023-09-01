@@ -1,0 +1,87 @@
+game-settings:
+  kit:
+    use-kits: true
+    drop-loot-if-not-kits: true
+    reset-every-death: true
+  rewards:
+    commands:
+    - msg %player% congratulations, here are 20 coins (VAULT PLUGIN REQUIRED)!
+    money: 20.0
+  end-game:
+    timer: 300
+    teleport-time: 10
+    fireworks:
+      enabled: true
+      amount-per-five-ticks: 3
+    commands:
+    - 'say %winner% won the WAR against %looser%! (not needed, simply edit end-game broadcast in messages.yml)'
+    - fb on %player% -s
+  start-game:
+    wait-time: 20
+    time-before-teleport: 10
+    invincible-tag: 10
+    commands:
+    - fly %player% off
+    - fb off %player% -s
+  punishments:
+    money: 20.0
+    commands:
+    - msg %player% sadly, you lost. Say goodbye to 20 coins (VAULT PLUGIN REQUIRED)!
+holograms:
+  faction:
+    enabled: true
+    lines:
+    - '&5&lFactionWars Stats&9 - &e%faction%'
+    - '&aWins&9/&cLosses&9: &6%wins%&9/&c%losses%'
+    - '&aKills&9/&cDeaths&9: &6%kills%&9/&c%deaths%'
+    no-faction: '§cYou are not in a faction.'
+  item: DIAMOND_SWORD
+  switchTime: 30
+  top:
+    enabled: true
+    footer: ''
+    line: '&b#%rank% &a%faction% &e%wins% Wins'
+    header: '&eFactionWars &aTOP &6#5 &aFactions'
+    number-of-factions: 5
+mysql:
+  password: ''
+  database: minecraft
+  port: '3306'
+  username: root
+  hostname: localhost
+disable-commands:
+  exceptions:
+  - msg
+  - tell
+  - m
+  - me
+  enabled: true
+stats:
+  table: factionWars
+  use-mysql: false
+invite-expire-time: 120
+war-cooldown-seconds: -1
+faction-mods-can-start: false
+can-challenge-allies: false
+selection:
+  equal-number: true
+  minimum-per-faction: 3
+  anvilgui-enabled: true
+  maximum-per-faction: -1
+  bets:
+    minimum: 0
+    maximum: 99999
+titles:
+  enabled: true
+debug: false
+bank-account: ''
+enable-war-opt-out: false
+update-checker: true
+colored-dev: true
+command:
+  main: war
+  aliases: [wars, w]
+  description: FactionWars main command
+integration:
+  towny:
+    use-nations: false

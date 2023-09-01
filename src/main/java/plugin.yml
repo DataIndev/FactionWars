@@ -1,0 +1,13 @@
+main: io.github.guipenedo.factionwars.FactionWars
+name: FactionWars
+version: 4.6.4
+api-version: 1.13
+author: PhilipsNostrum
+softdepend: [Vault, HolographicDisplays, PlaceholderAPI, Towny, Factions, FabledKingdoms, LegacyFactions, Guilds, mcMMO]
+commands:
+  fw:
+    description: FactionWars Admin command
+    aliases: [factionwar, factionwars, factionswar, fwars]
+permissions:
+  factionwars.player.*:
+    default: true

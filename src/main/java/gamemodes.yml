@@ -1,0 +1,38 @@
+default-gamemode: BLITZ
+gamemodes:
+  'KOTH':
+    type: KOTH
+    gamemode-settings:
+      conquer-time: 20
+      contest-time: 10
+      range: 3
+      points-per-second: 1
+      points-to-win: 120
+    game-settings:
+      end-game:
+        timer: 420
+  'TDM':
+    type: TDM
+    game-settings:
+      end-game:
+        timer: 300
+  'BLITZ':
+    type: BLITZ
+    gamemode-settings:
+      lives: 3
+      most-lives-wins: false
+    game-settings:
+      end-game:
+        timer: 600
+  'CTF':
+    type: CTF
+    gamemode-settings:
+      range: 3
+    game-settings:
+      end-game:
+        timer: 600
+  'HALO':
+    type: HALO
+    gamemode-settings:
+      range: 3
+      to-win: 3

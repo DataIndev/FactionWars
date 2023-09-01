@@ -1,0 +1,191 @@
+kits:
+  '1':
+    name: Chemist
+    inv:
+      slot:
+        '0':
+          ==: org.bukkit.inventory.ItemStack
+          type: WOOD_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              DAMAGE_ALL: 2
+        '1':
+          ==: org.bukkit.inventory.ItemStack
+          type: POTION
+          damage: 16460
+          amount: 16
+        '2':
+          ==: org.bukkit.inventory.ItemStack
+          type: POTION
+          damage: 16456
+          amount: 16
+        '3':
+          ==: org.bukkit.inventory.ItemStack
+          type: POTION
+          damage: 16388
+          amount: 16
+        '4':
+          ==: org.bukkit.inventory.ItemStack
+          type: POTION
+          damage: 16426
+          amount: 16
+      armor:
+        '0':
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_BOOTS
+        '1':
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_LEGGINGS
+        '2':
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_CHESTPLATE
+        '3':
+          ==: org.bukkit.inventory.ItemStack
+          type: GOLD_HELMET
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 16452
+  '2':
+    name: Tank
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §aTank
+    inv:
+      slot:
+        '0':
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_SWORD
+        '1':
+          ==: org.bukkit.inventory.ItemStack
+          type: COOKED_BEEF
+          amount: 12
+      armor:
+        '0':
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND_BOOTS
+        '1':
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND_LEGGINGS
+        '2':
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND_CHESTPLATE
+        '3':
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND_HELMET
+  '3':
+    name: Swordsman
+    inv:
+      slot:
+        '0':
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              DAMAGE_ALL: 1
+      armor:
+        '0':
+          ==: org.bukkit.inventory.ItemStack
+          type: CHAINMAIL_BOOTS
+        '1':
+          ==: org.bukkit.inventory.ItemStack
+          type: CHAINMAIL_LEGGINGS
+        '2':
+          ==: org.bukkit.inventory.ItemStack
+          type: CHAINMAIL_CHESTPLATE
+        '3':
+          ==: org.bukkit.inventory.ItemStack
+          type: CHAINMAIL_HELMET
+      effects:
+        REGENERATION:
+          level: 0
+          duration: 1998953
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+  '4':
+    name: Archer
+    inv:
+      slot:
+        '0':
+          ==: org.bukkit.inventory.ItemStack
+          type: WOOD_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              DURABILITY: 3
+        '1':
+          ==: org.bukkit.inventory.ItemStack
+          type: BOW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              ARROW_INFINITE: 1
+              ARROW_KNOCKBACK: 1
+              ARROW_DAMAGE: 3
+        '2':
+          ==: org.bukkit.inventory.ItemStack
+          type: ARROW
+      armor:
+        '0':
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_BOOTS
+        '1':
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_LEGGINGS
+        '2':
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_CHESTPLATE
+        '3':
+          ==: org.bukkit.inventory.ItemStack
+          type: LEATHER_HELMET
+      effects:
+        JUMP:
+          level: 0
+          duration: 1999484
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: BOW
+  '5':
+    name: Ninja
+    inv:
+      slot:
+        '0':
+          ==: org.bukkit.inventory.ItemStack
+          type: STONE_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            enchants:
+              DAMAGE_ALL: 2
+      armor:
+        '0':
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_BOOTS
+        '1':
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_LEGGINGS
+        '2':
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_CHESTPLATE
+        '3':
+          ==: org.bukkit.inventory.ItemStack
+          type: IRON_HELMET
+      effects:
+        SPEED:
+          level: 0
+          duration: 1999120
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: POTION
+      damage: 8258

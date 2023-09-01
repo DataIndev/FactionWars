@@ -1,0 +1,4 @@
+name: factionwars
+version: '${project.version}'
+main: io.github.guipenedo.factionwars.FactionWars
+api-version: '1.20'

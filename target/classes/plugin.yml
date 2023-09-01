@@ -1,0 +1,4 @@
+name: factionwars
+version: '4.6.4'
+main: io.github.guipenedo.factionwars.FactionWars
+api-version: '1.20'

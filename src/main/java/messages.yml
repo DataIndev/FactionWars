@@ -1,0 +1,207 @@
+menus:
+  main:
+    title: 'FactionWars main menu'
+    invite: '&bChallenge faction'
+    invite-tag: 'Faction name'
+    list: '&bList challenges'
+    stats: '&bStats'
+    top: '&bView war leaderboards'
+    toggle: '&bToggle war'
+  invites:
+    title: 'War invites'
+    gamemode: '&6Gamemode: &4%gamemode%'
+    accept: '&a&lLeft click &ato accept'
+    decline: '&c&lRight click &cto reject'
+  selector:
+    nametag: 'Player name'
+    next-page: '&aPage %nextpage% >'
+    prev-page: '&a< Page %prevpage%'
+    invited: '&aInvited &e%target%&a successfully.'
+    book: '&cType player name'
+    cancel: '&cCancel'
+    gamemode: '&cGamemode'
+    selected: '&aYou''ve been selected for a &4WAR&a! Do not leave the game!'
+    title: 'Choose %number% players'
+    finish: '&aFinish'
+    refresh: '&bRefresh player list'
+    player-offline: '&cPlayer is offline. Please refresh.'
+    selected-offline: '&c%number% of the selected players are now offline.'
+    bet-value: 'Bet value: %value%'
+warmup:
+  title: '&6=> &3WAR STARTING &6<='
+  subtitle: '&aIn &e%timer%'
+  timer: '&6Match starting in &3%time%'
+error:
+  faction-not-found: '&cTarget faction not found.'
+  no-invites: '&cNo invites.'
+  challenge-own: '&cYou can not challenge your own faction.'
+  leader-offline: '&cThat faction''s leader is offline.'
+  allies: '&cYou may not challenge allied factions!'
+  not-leader: '&cOnly the leader can accept/create/decline a war challenge.'
+  already-accepted: '&cA member of your faction has already accepted that request!'
+  faction-playing: '&cThat faction is currently playing!'
+  already-playing: '&cYour faction is already playing!'
+  target-no-player: '&cTarget faction doesn''t have enough players online (3 needed).'
+  no-permission: '&cYou do not have permission to run this command.'
+  faction-challenged: '&cThis faction has challenged you! Accept with &a/war accept %faction%'
+  no-arenas: '&cNo free arenas found.'
+  no-gamemodes: '&cNo gamemodes with arenas have been setup.'
+  already-challenged: '&cYou have already challenged this faction! Wait until current invite expires.'
+  faction-no-player: '&cYour faction doesn''t have enough players online (3 needed).'
+  no-faction: '&cYou''re not in a faction.'
+  not-challenged: '&cThat faction hasn''t challenged you! Challenge them with &a/war challenge %faction%'
+  bet-value: '&cBets must be between %min% and %max%!'
+  no-money: '&cYour faction does not have enough money! Deposit some first.'
+  cooldown: '&cYour faction was in a war recently. Please wait a few more minutes.'
+kit:
+  no-permission: '&cYou do not have permission for this kit!'
+  menu-title: 'Choose a kit'
+  unknown-error: '&cError occurred while selecting kit'
+  no-money: '&cYou do not have enough money for this kit! More &6%coins%&c needed.'
+gamemode:
+  no-permission: '&cYou do not have permission for this gamemode!'
+  menu-title: 'Select gamemode'
+  unknown-error: '&cError occurred while selecting gamemode'
+  selected: '&6Selected: &b%gamemode%'
+  locked: '&cCan not be changed'
+  unlocked: '&aClick to change!'
+commands:
+  stats: 'View a faction''s stats'
+  list: 'List war challenges'
+  main: 'Allows factions to war against each other.'
+  decline: 'Decline a war challenge.'
+  accept: 'Accept a war challenge.'
+  toggle: 'Opt out/in of wars'
+  invite: 'Challenge a faction to a war.'
+  gui: 'Opens GUI menu for faction wars.'
+  top: 'Top Leaderboard'
+  team-string: 'faction'
+  help: '&eFactionWars &bHELP MENU'
+prefix: '&3[FactionWars] &9'
+end-game:
+  won:
+    subtitle: 'The war on %map%'
+    broadcast: '&a&l%winner% &6has won the &4&lWAR &6on &a%map%&6 and the &b%bet%$ bet&6!'
+    title: '&a&l%winner%&f WON!'
+  tied:
+    title: 'It''s a tie!'
+    subtitle: ''
+  teleporting: '&6Teleporting in &310 seconds'
+command:
+  top:
+    faction: '&b#%rank% &a%name%: &e%wins%/%losses% %kills%/%deaths%'
+    header: '&9>>>&3==&1==&3== &5Leaderboard &1==&3==&1==&9<<<'
+    nonefound: '&cNo factions found'
+    header2: '&b#Rank &aName: &eWins/Losses Kills/Deaths'
+    footer: '&9>>>&3==&1==&3==&1==&3==&1==&3==&1==&3==&1==&9<<<'
+  stats:
+    still-fetching: '&cStill fetching data...'
+    line4: '&9>> &cKills/Deaths: &6%kills%/%deaths%'
+    line2: '&9>> &cRank: &6#%rank%'
+    line3: '&9>> &cWins/Losses: &6%wins%/%losses%'
+    line1: '&9>> &cName: &6%name%'
+    footer: '&9>>>&3==&1==&3==&1==&3==&1==&3==&1==&3==&1==&9<<<'
+    header: '&9>>>&3==&1==&3==&1==&3==&1==&3==&1==&3==&1==&9<<<'
+timer:
+  second: second
+  seconds: seconds
+  minutes: minutes
+  minute: minute
+teleporting:
+  subtitle: '&3You are about to be teleported'
+  title: '&6Get ready!'
+  timer: '&6You''ll be teleported in &3%time%.'
+started:
+  message: '&aMatch started!'
+  title: '&c=> &4WAR STARTED &c<='
+  subtitle: '&6Kill all enemies!'
+invincible:
+  timer: '&6You are invincible for &3%time%'
+invite:
+  expire-target: '%senderfaction% &6''s challenge to a &4WAR&6 has expired!'
+  self: '&6Your faction leader has challenged %targetfaction% &6to a &4WAR&6 of &4%gamemode%&6 with a &b%bet%$ bet&6!'
+  target: '%senderfaction% &6has challenged your faction to a &4WAR&6 of &4%gamemode%&6 with a &b%bet%$ bet&6!'
+  target-leader-accept: '&3Accept with &a/war accept %senderfaction%'
+  target-leader-expire: '&6Invite will expire in 2 minutes'
+  expire-self: '&6Your faction''s &4WAR&6 invite to %targetfaction% &6has expired!'
+  from: '&6From: &a%from% &6Gamemode: &4%gamemode%'
+accept:
+  target: '%senderfaction% &6has accepted your &4WAR &6challenge for &4%gamemode%&6 with a &b%bet%$ bet&6!'
+  self: '&6Your faction leader has accepted a &4WAR&6 challenge for &4%gamemode%&6 by %targetfaction%&6 with a &b%bet%$ bet&6!'
+leave-game: '&e&l%player% &6is now out of the game!'
+game-countdown:
+  timer: '&6Game ending in &3%time%'
+refuse:
+  target: '%senderfaction% &6has refused your &4WAR &6challenge!'
+  self: '&6Your faction leader has refused a &4WAR&6 challenge by %targetfaction%&6!'
+toggle-command:
+  'off': '&9Toggle mode turned &cOFF'
+  'on': '&9Toggle mode turned &aON'
+team-colors:
+  team1: '9'
+  team2: 'c'
+scoreboard:
+  title: '&5&l%gamemode%'
+  top-lines: []
+  bottom-lines:
+    - ''
+    - '&3Map'
+    - '%map%'
+    - ''
+    - '&6Time left'
+    - '%timer%'
+gamemodes:
+  blitz:
+    lost-life: '&bYou lost one life! You have &d%left%/%lives% &blives left'
+    broadcast: '&a%player% &blost one life and now has &d%left%/%lives% &blives left'
+    no-lives: '&a%player% &blost one life and is now out of the game!'
+    scoreboard:
+      players-left: '&aPlayers left'
+      your-lives: '&dYour lives'
+  ctf:
+    hologram:
+      flag: '&6Flag'
+      status: '&6Status'
+      lost: '&cLost'
+      defended: '&aDefended'
+      owner: '&6Owner'
+    scoreboard:
+      flags: '&aFlags'
+      carrying: '&dCarrying'
+      no-flags: 'No flags'
+    capture: '&b%player% &6captured the %color% &6flag!'
+    take: '&b%player% &6took the %color% &6flag!'
+  halo:
+    hologram:
+      flag: '&6Flag'
+      status: '&6Status'
+      taken: '&cTaken'
+      defended: '&aDefended'
+    scoreboard:
+      conquers: '&aConquers'
+      takers: '&dTakers'
+      untaken: 'Untaken'
+    capture: '&b%player% &6captured the %color% &6flag!'
+    lost-flag: '&b%player% &6has §clost§6 the %color% &6flag!'
+    take: '&b%player% &6took the %color% &6flag!'
+    yours-taken: '&cYou can''t capture the enemy''s flag because yours has been taken!'
+  koth:
+    holograms:
+      status: '&6Status'
+      unclaimed: '&fUnclaimed'
+      conquering: '&cConquering'
+      conquered: '&aConquered'
+      contested: '&4Contested'
+      king: '&6King'
+      none: '&cNone'
+    scoreboard:
+      points: '&aPOINTS'
+      status: '&dStatus'
+      unclaimed: '&fUnclaimed'
+      conquering: '&cConquering'
+      conquered: '&aConquered'
+      contested: '&4Contested'
+    contested: '&aThe hill has been contested! Moving hill...'
+    conquered: '&aThe hill has been conquered by &e%conqueror%'
+    contesting: '&aThe hill is being contested by &e%contester%'
+    conquering: '&aThe hill is being conquered by &e%conqueror%'
